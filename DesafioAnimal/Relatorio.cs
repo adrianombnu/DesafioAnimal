@@ -25,7 +25,7 @@ namespace DesafioAnimal
 
         public void CadastrarAnimal(string raca, decimal pesagem, int codigoAnimal, decimal fatorMultiplicacao, decimal valorArroba)
         {
-            var valorAnimal = (pesagem * valorArroba * fatorMultiplicacao);
+            var valorAnimal = (decimal)(pesagem * valorArroba * fatorMultiplicacao);
 
             var animal = new Animal(raca, pesagem, codigoAnimal, fatorMultiplicacao, valorAnimal);
 
