@@ -12,7 +12,7 @@ namespace DesafioAnimal
        
         public static StreamReader ImportarArquivo(int tipoArquivo)
         {
-            if (tipoArquivo != 1 && tipoArquivo != 2)
+            if (tipoArquivo != (int)ETipoArquivo.Animais && tipoArquivo != (int)ETipoArquivo.Racas)
             {
                 throw new Exception("Tipo do arquivo é inválido.");
                 
@@ -20,7 +20,7 @@ namespace DesafioAnimal
 
             string fullPath = "";
 
-            if (tipoArquivo == 1)
+            if (tipoArquivo == (int)ETipoArquivo.Animais)
             {
                 fullPath = @"C:\Users\PremierSoft\Documents\adriano\animais.txt";
 

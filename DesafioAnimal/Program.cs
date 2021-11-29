@@ -14,7 +14,7 @@ namespace DesafioAnimal
 
             try
             {
-                var sr = Arquivo.ImportarArquivo(2);
+                var sr = Arquivo.ImportarArquivo((int)ETipoArquivo.Racas);
 
                 string s = "";
                 int row = 0;
@@ -45,7 +45,7 @@ namespace DesafioAnimal
 
             try
             {
-                var sr = Arquivo.ImportarArquivo(1);
+                var sr = Arquivo.ImportarArquivo((int)ETipoArquivo.Animais);
 
                 string s = "";
                 int row = 0;
